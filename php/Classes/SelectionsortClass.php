@@ -11,10 +11,11 @@ class SelectionsortClass
         for ($i = 0; $i < $arrayLength; $i++){
             for ($j = 0; $j < $arrayLength; $j++) {
                 if($unsortedArray[$i] < $unsortedArray[$j]){
-                    Swap::swapValues($unsortedArray, $i, $j);
+                    $unsortedArray = Swap::swapValues($unsortedArray, $i, $j);
                 }
             }
         }
+        
         return $unsortedArray;
     }
 }
